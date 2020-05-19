@@ -13,4 +13,7 @@ h3{
   font-size: medium;
   font-weight:bold;
   }
+  ul{
+    list-style-type: none;
+  }
   
