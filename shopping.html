@@ -17,15 +17,18 @@
     </ul>
 </header>
     <body>
+       
    <div class="main">
-        <h1>today news</h1>
-
-        <video width="320" height="240" controls>
+    <h1 style="text-align: center;">today news</h1>
+    <div class="video">
+        <video width="420" height="340" controls>
           <source src="movie.mp4" type="video/mp4">
           <source src="https://www.cbsnews.com/live/" type="video/web">
           Your browser does not support the video tag.
         </video>
  <a href="https://www.cbsnews.com/live/" alt="news" target="_blank"> todays news</a>
+   </div>
+   <div class="r">
 <ol>
     <li>personal detail<ul id="gh">
         <li><form> first name
@@ -55,9 +58,7 @@
             apt
             <input type="text" name="apt">
         </form></li>
-        <!-- <li><form> apt
-            <input type="text" name="apt">
-        </form></li> -->
+        
         <li><form> ZIPcode
             <input type="text" name="zipcode">
             <lable for="state">choose a state:</lable>
@@ -68,49 +69,43 @@
                    <option value="verginia">virgina</option>
                 </select>
         </form></li>
-        <!-- <li><lable for="state">choose a state:</lable>
-            <select id="state">
-               <option value="iowa">iowa</option>
-               <option value="washington">washnge</option>
-               <option value="mariland">mariland</option>
-               <option value="verginia">virgina</option>
-            </select>state</li> -->
+      
         <li>
             <form> country
                 <input type="text" name="country">
                 <button type="submit" value="Submit">Submit</button>
   <button type="reset" value="Reset">Reset</button>
             </form>
-            <!-- <button type="submit" value="Submit">Submit</button>
-  <button type="reset" value="Reset">Reset</button> -->
+ 
         </li>
     </ul></li>
-    <li>shiping address<ul>
+    <li>shiping address<ul id="sa">
         <li><form> street address
             <input type="text" name="street address">
-        </form></li>
-        <li><form> apt
+            apt
             <input type="text" name="apt">
         </form></li>
+        
         <li><form> ZIPcode
             <input type="text" name="zipcode">
+            <lable for="state">choose a state:</lable>
+                <select id="state">
+                   <option value="iowa">iowa</option>
+                   <option value="washington">washnge</option>
+                   <option value="mariland">mariland</option>
+                   <option value="verginia">virgina</option>
+                </select>
         </form></li>
-        <li><lable for="state">choose a state:</lable>
-            <select id="state">
-               <option value="iowa">iowa</option>
-               <option value="washington">washnge</option>
-               <option value="mariland">mariland</option>
-               <option value="verginia">virgina</option>
-            </select>state</li>
+      
         <li>
             <form> country
                 <input type="text" name="country">
                 <button type="submit" value="Submit">Submit</button>
   <button type="reset" value="Reset">Reset</button>
             </form>
+ 
         </li>
-    </ul>
-    </li>
+    </ul></li>
     <li>payment
         <fieldset>
 <legend>
@@ -126,8 +121,6 @@ Credit cards: cards:</legend>
     
 </ol>
 
-
-
 <form action ="http://www.google.com/search">
    <div> Let's search related items
    <input name ="q"/>
@@ -135,12 +128,10 @@ Credit cards: cards:</legend>
    </div>
    </form>
    <form>
-    Phone Number
-    <input type="tel" pattern="(641)-?\d{3}-?\d{4}" required >
-    
+    Phone Number<input type="tel" pattern="(641)-?\d{3}-?\d{4}" required >
     <input type="submit" value="Submit">
     </form>
-
+   </div>
     <div class="valid">
         <div class="validhtml"><a href="https://validator.w3.org/check/referer"> 
           <img src="download.jpg" alt="Validate" style="width:100%;" /></a>
