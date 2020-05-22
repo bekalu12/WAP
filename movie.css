@@ -59,15 +59,11 @@ header{
     color:#E8DC9B;
     height: 1120px;
     width: 560px;
-    
-
 }
 .div3{
     position: absolute;
     display: block;
     border:none;
-    /* border:2px solid; */
-    /* color:rgba(7, 7, 7, 0.959); */
     box-sizing: border-box;
     margin: auto;
     padding-bottom: 5px;
@@ -79,12 +75,10 @@ header{
    width: 575px;
 }
 .text33{
-    /* text-align: center; */
     color:rgba(241, 8, 8, 0.993);
     font-size: 48pt;
     font-weight: bold;
-    
-}
+    }
 .imgh{
     background-position: top left;
    
