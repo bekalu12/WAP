@@ -1,0 +1,228 @@
+
+
+body{
+    position: relative;
+    background-image: url('background.png');
+  
+    margin: auto;
+}
+
+header{
+    background-image: url('bannerbg.png');
+   background-repeat: repeat; 
+   display: block;
+   text-align: center;
+   height: 50px;
+}
+.title{
+    text-align: center;
+    font-weight:bold;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+    
+    font-size: 24pt;
+}
+.big{
+    position: relative;
+    border:4px solid;
+    color:gray;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    /* padding: 5px,5px,5px,5px; */
+    margin: auto;
+    height: 1028px;
+    width: 800px;
+}
+.l{
+    
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+    
+    /* border-radius: 20px; */
+    left: 0;
+    top: 0;
+    border:none; 
+    color:#E8DC9B;
+    height: 1020px;
+    width: 560px;
+    
+
+}
+.div3{
+    position: absolute;
+    display: block;
+    border:none;
+    /* border:2px solid; */
+    /* color:rgba(7, 7, 7, 0.959); */
+    box-sizing: border-box;
+    margin: auto;
+    padding-bottom: 5px;
+    background-image: url("l3/rbg.png");
+    background-repeat:  repeat;
+   top: 0;
+   left: 0;
+   height: 83px;
+   width: 575px;
+}
+.text33{
+    /* text-align: center; */
+    color:rgba(241, 8, 8, 0.993);
+    font-size: 48pt;
+    font-weight: bold;
+    
+}
+.imgh{
+    background-position: top left;
+   
+  
+    height: 83px;
+    width: 100px;
+
+}
+.div4{
+    position: absolute;
+    display: block;
+    /* border:2px solid; */
+    /* color:rgba(58, 238, 13, 0.993); */
+    border:none;
+    box-sizing: border-box;
+    margin: auto;
+    
+    left: 0;
+    bottom: 0;
+    height: 920px;
+    width: 555px;
+    
+    /* border-radius:1%; */
+}
+.new{
+    position: absolute;
+    display: block;
+    background-color: rgba(62, 192, 69, 0.692);
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    height: 25px;
+    width: 563px;
+}
+.ll{ 
+
+position: relative;
+    display: inline-block;
+    /* border:2px solid; */
+    /* color:rgba(241, 8, 8, 0.993); */
+    border:none;
+    box-sizing: border-box;
+    margin: auto;
+    
+    left: 0;
+    bottom: 0;
+    height: 920px;
+    width: 270px;
+}
+.lr{
+    position: relative;
+    display: inline-block;
+    /* border:2px solid; */
+    /* color:rgba(241, 8, 8, 0.993); */
+    border:none;
+    box-sizing: border-box;
+    margin: auto;
+   
+    right: 0;
+    bottom: 0;
+    height: 920px;
+    width: 280px;
+}
+.r{
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+    
+    right: 0;
+    top: 0;
+    border:none;
+    /* border:2px solid; */
+    /* color:rgba(243, 4, 4, 1.0); */
+    height: 1020px;
+    width: 230px;
+    /* border-radius: 20px; */
+
+}
+.div5{
+    position: absolute;
+    display: block;
+    /* border:2px solid; */
+    /* color:rgba(150, 51, 51, 0.4); */
+    border:none;
+    box-sizing: border-box;
+    margin: auto;
+    
+    /* border-radius: 20px; */
+    top: 0;
+    right: 0;
+    height: 490px;
+    width: 230px;
+}
+.imgr{
+    text-align: center;
+    height: 493px;
+    width: 230px;
+    /* border-radius: 20px; */
+
+
+}
+.div6{
+
+    display: block;
+    position: absolute;
+    border:0px solid;
+    color:rgba(3, 3, 3, 1.0);
+    background-color: rgba(62, 192, 69, 0.692);
+       box-sizing: border-box;
+    margin: auto;
+    /* border-radius: 20px; */
+    border:none;
+   left: 0;
+   bottom: 0;
+   height: 527px;
+    width: 230px;
+}
+ .g {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: 2px;
+    border-style: groove;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    color:black;
+  }
+   .f {
+    
+    font-size: 8px;
+    text-align: left;
+    color:black;
+    border:none;
+
+  }
+ img{
+     float: left;
+ }
+ table{
+     padding-top: 10px;
+     border:none;
+ }
+ .validator{
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+}
+ 
