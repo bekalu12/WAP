@@ -59,7 +59,7 @@
 ul#gh li,ul#ba li,ul#sa li{
     display: inline;
     font-size: 16px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-right: 1em;
     list-style-type: none;
 }
