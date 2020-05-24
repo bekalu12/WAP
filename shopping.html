@@ -4,7 +4,6 @@
       <link rel="stylesheet" href="shop.css">
       <meta charset="utf-8" />
       <title>my first web site</title>
-     
     </head>
     <header><ul id="menu">
         <li>Home</li>
@@ -15,11 +14,10 @@
         <li>Advertizemnt</li>
     </ul>
 </header>
-       
    <div class="main">
     <h1 style="text-align: center;">today news</h1>
     <div class="video">
-        <video width="420" height="340" controls>
+        <video width="420" height="300" controls>
           <source src="movie.mp4" type="video/mp4">
           <source src="https://www.cbsnews.com/live/" type="video/web">
           Your browser does not support the video tag.
@@ -27,94 +25,65 @@
  <a href="https://www.cbsnews.com/live/"  target="_blank"> todays news</a>
    </div>
    <div class="r">
+       <form>
  <ol>
-    <li>personal detail<ul id="gh">
-        <li><form> first name
-            <input type="text" name="first name">
-            last name<input type="text" name="last name">
-        </form></li>
-       
-        <li><form> social security
-            <input type="text" name="social security">
-            phone
-            <input type="text" name="phone">
-        </form></li>
-       
-        <li><form> email
-            <input type="text" name="email">
-            <button type="submit" value="Submit">Submit</button>
-  <button type="reset" value="Reset">Reset</button>
-        </form></li>
-    </ul></li>
-    <li>biling address<ul id="ba">
-        <li><form> street address
-            <input type="text" name="street address">
-            apt
-            <input type="text" name="apt">
-        </form></li>
-        
-        <li><form> ZIPcode
-            <input type="text" name="zipcode">
-        </form>choose a state:
-                <select>
-                   <option value="iowa">iowa</option>
-                   <option value="washington">washnge</option>
-                   <option value="mariland">mariland</option>
-                   <option value="verginia">virgina</option>
-                </select>
+    <li>Personal detail
+        <div>first name<input type="text" name="first name" >
+            last name<input type="text" name="last name" ></div>
+       <div>social security<input type="text" name="social security" required>
+        Phone Number<input type="tel" pattern="[0-9]{3}-?\d{3}-?\d{4}" required ></div>
+       <div>email<input type="text" name="email" required>
+        </div>
         </li>
-      
-        <li>
-            <form> country
-                <input type="text" name="country">
-                <button type="submit" value="Submit">Submit</button>
-  <button type="reset" value="Reset">Reset</button>
-            </form>
- 
-        </li>
-    </ul></li>
-    <li>shiping address<ul id="sa">
-        <li><form> street address
-            <input type="text" name="street address">
-            apt
-            <input type="text" name="apt">
-        </form></li>
-        
-        <li><form> ZIPcode
-            <input type="text" name="zipcode"></form>
+    <li>Biling address
+         <div>street address<input type="text" name="street address">
+            apt<input type="text" name="apt"></div>
+      <div>ZIPcode
+        <input type="text" name="zipcode" required>
+        choose a state:
+            <select>
+               <option value="iowa">iowa</option>
+               <option value="washington">washnge</option>
+               <option value="mariland">mariland</option>
+               <option value="verginia">virgina</option>
+            </select></div>
+            <div>country
+                <input type="text" name="country"></div>
+                </li>
+    <li>Shiping address
+       <div>street address<input type="text" name="street address">
+        apt<input type="text" name="apt"></div> 
+        <div>ZIPcode
+            <input type="text" name="zipcode" required>
             choose a state:
                 <select>
-                   <option value="iowa">iowa</option>
+                   <option value="iowa" selected>iowa</option>
                    <option value="washington">washnge</option>
                    <option value="mariland">mariland</option>
                    <option value="verginia">virgina</option>
-                </select>
-        </li>
-      
-        <li>
-            <form> country
-                <input type="text" name="country">
-                <button type="submit" value="Submit">Submit</button>
-  <button type="reset" value="Reset">Reset</button>
-            </form>
- 
-        </li>
-    </ul></li>
-    <li>payment
-        <fieldset>
- <legend>
- Credit cards: cards:</legend>
+                </select></div>
+           <div> country
+            <input type="text" name="country"></div>
+           </li>
+    <li>Payment<fieldset>
+ <legend>Credit cards: cards:</legend>
  <input type ="radio" name ="cc" value ="visa" checked ="checked"/> Visa
  <input type ="radio" name ="cc" value="mastercard MasterCard"/>MasterCard
  <input type ="radio" name ="cc" value="ame"/> American Express
  </fieldset>
     </li>
-    <li>agrement<form><input type="checkbox" name="agree"/>agree
+<li>Agrement<textarea rows="4" cols="50" disabled>In a shopping agreement, the owner agrees to give the seller a fixed period of time, during which to “shop” the material around to prospective distributors, television networks, financiers, and what-have-you, in order to get the project “set-up.” The owner and producer agree that if, during the shopping period, there’s interest in the project, they will each enter into negotiations with the interested party.</textarea>
+    <form action="/action_page.php">
+        <label for="filling date">agreement date:</label>
+        <input type="date" id="filling date" name="filling date" required>
+        <!-- <input type="submit" value="Submit"> -->
+      </form>
+    <p><input type="checkbox" name="agree" required/>agree
         <button type="submit" value="Submit">Submit</button>
-  <button type="reset" value="Reset">Reset</button>  </form></li>
+  <button type="reset" value="Reset">Reset</button> </p> </li>
     
  </ol>
-
+       </form>
  <form action ="http://www.google.com/search">
    <div> Let's search related items
    <input name ="q"/>
@@ -122,8 +91,7 @@
    </div>
    </form>
    <form>
-    Phone Number<input type="tel" pattern="(641)-?\d{3}-?\d{4}" required >
-    <input type="submit" value="Submit">
+    
     </form>
    </div>
     <div class="valid">

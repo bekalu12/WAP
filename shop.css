@@ -6,11 +6,15 @@
      margin-left: 200px;
      margin-right: 200px;
  }
+ form ol li div{
+     margin-top: 10px;
+
+ }
 
  .main{
     position: relative;
     border:4px solid;
-    color:gray;
+    color:rgb(155, 114, 114);
     
     border-radius: 20px;
     overflow: hidden;
@@ -24,12 +28,12 @@
  .video{
      position: relative;
      left:250px;
-     top:5px;
+     top:0;
  }
  .r{
     position: relative;
     border:4px solid;
-    color:rgb(5, 5, 5);
+    color:rgb(159, 5, 5);
     
     border-radius: 20px;
     overflow: hidden;
@@ -37,7 +41,7 @@
     margin: auto;
     /* padding: 5px,5px,5px,5px; */
     margin: auto;
-    height: 628px;
+    height: 620px;
     width: 850px;
 
  }
