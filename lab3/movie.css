@@ -2,13 +2,13 @@
 
 body{
     position: relative;
-    background-image: url('background.png');
+    background-image: url('l3/background.png');
   
     margin: auto;
 }
 
 header{
-    background-image: url('bannerbg.png');
+    background-image: url('l3/bannerbg.png');
    background-repeat: repeat; 
    display: block;
    text-align: center;
