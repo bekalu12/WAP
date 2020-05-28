@@ -1,0 +1,29 @@
+.big{
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto;
+}
+body{
+    background-color: white;
+}
+
+nav >ul{
+    text-align: center;
+    background-color: maroon;
+    color: white;
+    list-style-type: none;
+}
+.div1{
+    background-color: mediumturquoise;
+}
+/* p{
+    background-color: maroon;
+} */
+.a{
+    background-color: lightgray;
+    max-width: 125%;
+}
+.tablediv {
+    background-color: white;
+    max-width: 125%;
+}
