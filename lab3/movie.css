@@ -1,12 +1,12 @@
 
 body{
     position: relative;
-    background-image: url('.lab3/background.png');
+    background-image: url('background.png');
     margin: auto;
 }
 
 header{
-    background-image: url('.lab3/bannerbg.png');
+    background-image: url('bannerbg.png');
    background-repeat: repeat; 
    display: block;
    text-align: center;
@@ -59,7 +59,7 @@ header{
     box-sizing: border-box;
     margin: auto;
     padding-bottom: 5px;
-    background-image: url(".lab3/rbg.png");
+    background-image: url("rbg.png");
     background-repeat:  repeat;
    top: 0;
    left: 0;
