@@ -1,4 +1,5 @@
 (function() {
+    "use strict";
     var play;
     var original;
     var speed;
@@ -8,8 +9,6 @@
     var bike = BIKE.split("=====\n");
     var dive = DIVE.split("=====\n");
     var juggler = JUGGLER.split("=====\n");
- 
-    
     document.getElementById("stop").disabled = true; //disable stop button when first loaded
     document.getElementById("start").onclick = startAnimation;
     document.getElementById("stop").onclick = stopAnimation;
@@ -18,7 +17,6 @@
         clearInterval(play);
         startAnimation();
     }
-    
     document.getElementById("display").onchange = function() {
         let animVal = document.getElementById("display").value;
         if (animVal === "bike") {
@@ -70,7 +68,6 @@
         document.getElementById("start").disabled = true;
         document.getElementById("stop").disabled = false;
         var arr;
-        //var displaySize;
         var display = document.getElementById("display").value;
         if (display === "bike") {
             arr = bike;
@@ -86,11 +83,9 @@
         function animation() {
             if (index === arr.length) { index=0; }
             document.getElementById("text").innerHTML = arr[index++];
-            //document.getElementById("text").fontSize = displaySize;
         }
         play = setInterval(animation, speed);
     }
-
     function changeSpeed() {
         if (document.getElementById("checkbox").checked) {
             speed = 50;
