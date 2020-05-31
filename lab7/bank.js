@@ -1,3 +1,4 @@
+const accountInfoList = [];
 (function() {
     "use strict";
     document.getElementById("new").onclick = function(evt){
@@ -10,7 +11,7 @@
         }
     }
     
-    const accountInfoList = [];
+    
     
     const createAccount = function() {
         let accountName = document.getElementById("acctype").value;
