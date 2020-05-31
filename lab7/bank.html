@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="bank.js"></script>
+</head>
+<body>
+    <h3>bank application </h3>
+    <div>
+        <form id="forms" action="newaccount.html">
+            Account Name:
+            <select id="acctype" required>
+                <option value="">select account type</option>
+                <option value="checking">Checking</option>
+                <option value="saving">Saving</option>
+                <option value="business">Business</option>        
+        </select><br><br>
+            Deposit:<input type="number" id="depo" name="quantity" min="1" max="500000"><br><br>
+          
+            <button id ="new">Create new account</button><br>
+        </form>
+       
+    
+        
+    </div>
+   
+</body>
+</html>
