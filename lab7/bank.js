@@ -2,18 +2,22 @@
 //function newaccounttype(){
 document.getElementById("new").onclick = function(evt){
     evt.preventDefault();
-    let accType = document.getElementById("acctype").value;
-    sessionStorage.setItem("accounttype",accType);
-    let depositamount = document.getElementById("depo").value;
-    sessionStorage.setItem("depositamo",depositamount);
-    window.location.href = "newaccount.html";
+    accountInfoList.push(createAccount());
+    document.getElementById("output").innerHTML = "";
+    for (let i = 0; i < accountInfoList.length; i++) {
+        document.getElementById("output").innerHTML += 
+        `Account name: ${accountInfoList[i].name} and balance: ${accountInfoList[i].balance} \n`; 
+    }
 }
-// }
-// function newdeposit(){
-// document.getElementById("new").onclick = function(evt){
-//     evt.preventDefault();
-//     let depositamount = document.getElementById("depo").value;
-//     sessionStorage.setItem("depositamo",depositamount);
-//     window.location.href = "newaccount.html";
-// }
-// }
+
+const accountInfoList = [];
+
+const createAccount = function() {
+    let accountName = document.getElementById("acctype").value;
+    let depositAmount = document.getElementById("depo").value;
+
+    return {
+        name : accountName,
+        balance : depositAmount
+    }
+}
