@@ -10,9 +10,6 @@ const accountInfoList = [];
             `Account name: ${accountInfoList[i].name} and balance: ${accountInfoList[i].balance} \n`; 
         }
     }
-    
-    
-    
     const createAccount = function() {
         let accountName = document.getElementById("acctype").value;
         let depositAmount = document.getElementById("depo").value;
