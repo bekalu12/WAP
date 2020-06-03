@@ -1,23 +1,32 @@
-"use strict";
-alert("hello, world!");
-console.log(sum(1, 2));
-console.log(max3(1, 2,5));
-console.log(isvowel("r"));
-console.log(reverse("bekalu"));
-console.log(filterbylength(["bekalu","geg","dhrhrhs"],2));
-console.log(computesqure([1,2,3,4]));
-console.log(lengthmax(["sdasg","dfhhrr","err"]));
-console.log(multiply([1,2,3,4]));
-console.log(secondlargest([1,2,3,4,9,7,0]));
-fib(5,9,4);
 
-document.getElementById("demo").innerHTML = sum(1, 2);
-document.getElementById("demo").innerHTML=max3(1,2,5);
-document.getElementById("demo").innerHTML=isvowel("r");
-document.getElementById("demo").innerHTML=reverse("bekalu");
-document.getElementById("demo").innerHTML=lengthmax(["sdasg","dfhhrr","err"]);
-x = 7;
-var x;
+//alert("hello, world!");
+// console.log(sum(1, 2));
+// console.log(max3(1, 2,5));
+// console.log(isvowel("r"));
+// console.log(reverse("bekalu"));
+// console.log(filterbylength(["bekalu","geg","dhrhrhs"],2));
+// console.log(computesqure([1,2,3,4]));
+// console.log(lengthmax(["sdasg","dfhhrr","err"]));
+// console.log(multiply([1,2,3,4]));
+// console.log(secondlargest([1,2,3,4,9,7,0]));
+// fib(5,9,4);
+
+
+ //document.getElementById("demo").innerHTML = sum(1, 2);
+// document.getElementById("demo").innerHTML=max3(1,2,5);
+// document.getElementById("demo").innerHTML=isvowel("r");
+// document.getElementById("demo").innerHTML=reverse("bekalu");
+// document.getElementById("demo").innerHTML=lengthmax(["sdasg","dfhhrr","err"]);
+"use strict";
+elem = document.getElementById("demo").innerHTML = test(); // Find an element 
+var y;
+function test(){
+   y=7;
+   var x = 5;
+    return x+"" +y;
+}
+
+
 function sum(a, b) {
     return a + b;
 }
@@ -95,3 +104,4 @@ function fib(x, y, n){
         n--;
     }
 }
+
