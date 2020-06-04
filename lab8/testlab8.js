@@ -31,7 +31,13 @@ var start = function(){
     console.log(bicycleprototype);
     console.log(mountainbikePrototype);
     bicycleprototype.speedUp(5);
+    bicycleprototype.applybrake(10);
     console.log(bicycleprototype.speed);
+    bicycleprototype.speedUp(5);
+    console.log(bicycleprototype.speed);
+    mountainbikePrototype.setGear(6);
+    console.log(mountainbikePrototype.gear);
+    console.log(mountainbikePrototype.bike);
 }
 
 }
