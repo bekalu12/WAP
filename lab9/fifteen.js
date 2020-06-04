@@ -57,30 +57,34 @@
 //         div.y = y; 
 //     }        
 // };
-window.onload = function() {
-	$("shufflebutton").observe('click', shufflePuzzleEvent);
-	populateTiles();
-}
-init = $();
-var puzzleArea = $("#puzzlearea");
-var divs = puzzleArea. $("div");
-// initialize each piece
-$("divs").each(function(index,value){
-    var div = divs[value];
-    // calculate x and y for this piece
-         var x = ((index % 4) * 100) ;
-         var y = (Math.floor(index / 4) * 100) ;
 
-         // set basic style and background
-         $("div").addClass("className") = "puzzlepiece";
-         $("div").css({
-            "left": "x + 'px'",
-            "top": "y + 'px'",
-            "backgroundImage" :'url("background.jpg")',
-            "backgroundPosition" : "-x + 'px ' + (-y) + 'px'" 
-         });
-    // store x and y for later
-         div.x = x;
-         div.y = y; 
 
-})
+//*****
+
+// window.onload = function() {
+// 	$("shufflebutton").observe('click', shufflePuzzleEvent);
+// 	populateTiles();
+// }
+// init = $();
+// var puzzleArea = $("#puzzlearea");
+// var divs = puzzleArea. $("div");
+// // initialize each piece
+// $("divs").each(function(index,value){
+//     var div = divs[value];
+//     // calculate x and y for this piece
+//          var x = ((index % 4) * 100) ;
+//          var y = (Math.floor(index / 4) * 100) ;
+
+//          // set basic style and background
+//          $("div").addClass("className") = "puzzlepiece";
+//          $("div").css({
+//             "left": "x + 'px'",
+//             "top": "y + 'px'",
+//             "backgroundImage" :'url("background.jpg")',
+//             "backgroundPosition" : "-x + 'px ' + (-y) + 'px'" 
+//          });
+//     // store x and y for later
+//          div.x = x;
+//          div.y = y; 
+
+// })
