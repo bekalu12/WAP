@@ -1,10 +1,10 @@
-(function(){
+window.onload = function(){
     "use strict";
-    // init();
-    // var init  = function(){
-        document.getElementById("btn").click= start;
+   
+        document.getElementById("btn").onclick = function() {
+            start();
+        };
 
-    //}
     var bicycleprototype;
     var mountainbikePrototype;
 
@@ -26,14 +26,12 @@ var createMountainBikePrototype = function(proto){
 
 
 var start = function(){
-    console.log("######");
-    // bicycleprototype = createBicyclePrototype();
-    // mountainbikePrototype = createMountainBikePrototype(bicycleprototype) ;
-    // console.log("######");
-    // console.log(bicycleprototype.speed);
-    // console.log(mountainbikePrototype.speed);
-    // bicycleprototype.speedUp(5);
-    // console.log(bicycleprototype.speed);
+    bicycleprototype = createBicyclePrototype();
+    mountainbikePrototype = createMountainBikePrototype(bicycleprototype) ;
+    console.log(bicycleprototype);
+    console.log(mountainbikePrototype);
+    bicycleprototype.speedUp(5);
+    console.log(bicycleprototype.speed);
 }
-//window.onload = init;
-})();
+
+}
