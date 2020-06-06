@@ -1,10 +1,10 @@
 
 $(function() {
     "use strict";
-    let url = "jsonplaceholder.typicode.com/";
+    let url = "http://jsonplaceholder.typicode.com/";
     let userId;
 
-    $("#userButton").click() = getUserInfo;
+    $("#userButton").click(getUserInfo);
 
     function getUserInfo() {
         userId = $("#userId").val();
@@ -49,7 +49,7 @@ $(function() {
                 </div>`;
             }
             $("#postsDisplay").html(display);
-            $(".comment-button").click() = function(evt) {
+            $(".comment-button").click(function(evt) {
                 evt.preventDefault();
                 let postId = $(evt.target).attr('id');
                 fetch(url + `comments?postId=${postId}`)
@@ -75,12 +75,12 @@ $(function() {
                 .catch(err => {
                     $(`#${postId}comment`).html(err.statusText);
                 })
-            }
+            })
         })
         .catch( err => {
             $("#userInfoDisplay").html(err.statusText);
         })
  }
-}());
+});
 
     
