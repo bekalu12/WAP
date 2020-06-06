@@ -1,15 +1,39 @@
-// function(){}
-// var things =  {' a': 97 , ' b': 98 , ' c': 99};
-// for(const key in things) {
-// console.log(key +', '+ things[key]);
+var x= 5;
+function foo(){
+  console.log(this.x);
+}
+foo();
+const obj ={x:10,bar:function() { console.log(this.x);}};
+obj.bar();
+
+const bar2 = obj.bar;
+bar2();
+
+obj.foo = foo;
+obj.foo();
+// function sum(a,b){
+//   console.log(a+b);
 // }
+// sum();
+function sum( x,y , ...more){
+var total = x + y;
+//if(more.length > 0 ){
+for(let i=0 ; i <more.length ; i ++) {
+total += more[i ];
+}
+//}
+console.log(total);
+}
+sum(4,3 ); // 8
+sum(4, 4, 4 ,9);
 
-var x = 5; // Initialize x
-var y = 7; 
- // Declare y
 
-elem = document.getElementById("demo"); // Find an element 
-elem.innerHTML = x + " " + y;       // Display x and y
-//var y;  
-  // Assign 7 to y
+var thing = { a: 97 , ' b': 98 , ' c': 99,j:"p"};
+for (let k in thing ){
+console.log(k +', '+ thing[k]);
+}
+var things=[2,4,5,6,9]
+for (let k of things.entries()) {
 
+console.log( k);
+}
