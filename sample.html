@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html> 
+     <head> 
+         <script>
+             function computeMyAge() {
+                  let born_year = document.getElementById("birth_year").value;
+                   born_year = parseInt(born_year);
+                    let running_year = document.getElementById("current_year").value; 
+                    running_year = parseInt(running_year);
+                    let age = running_year-born_year ;
+                    let output = "You are " + age + " years old.";
+                     document.getElementById("display").innerHTML = output;
+                     }
+                      </script>
+                      </head> 
+                      <body> 
+                          Year of Birth: <input type="text" id="birth_year"><br> 
+                          Current year: <input type="text" id="current_year"><br>
+                      <button onclick="computeMyAge()">How old am i?</button><br> 
+             <span id="display"></span>
+             let i = 5;
+              while(i>5){
+                   alert("Hello");
+                 }
+        </body>
+ </html>

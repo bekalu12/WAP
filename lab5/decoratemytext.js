@@ -2,10 +2,17 @@
 function increaseSize(){
     // alert("Hello, world");
     setInterval(increaseSize,500);
-    var text = document.getElementById("zoom");
-    var textSize = text.style.fontSize;
-    var fontSize  = parseInt(textSize);	
-    text.style.fontSize = (fontSize + 2) + "pt";
+    // var text = document.getElementById("zoom");
+    // var textSize = text.style.fontSize;
+    // var fontSize  = parseInt(textSize);	
+    // text.style.fontSize = (fontSize + 2) + "pt";
+ 
+    var text = $("#zoom").css("font-size");
+    var fontSize = parseInt(text);
+    $("#zoom").css("font-size",size(fontSize));
+}
+function size(x){
+    return x+2+"pt";
 }
 
 document.getElementById("btn").onclick = increaseSize;

@@ -1,8 +1,8 @@
-.big{
+/* .big{
     max-width: 50%;
     max-height: 50%;
     margin: auto;
-}
+} */
 body{
     background-color: white;
 }
@@ -13,9 +13,9 @@ nav >ul{
     color: white;
     list-style-type: none;
 }
-.div1{
+/* .div1{
     background-color: mediumturquoise;
-}
+} */
 /* p{
     background-color: maroon;
 } */
@@ -23,7 +23,8 @@ nav >ul{
     background-color: lightgray;
     max-width: 125%;
 }
-.tablediv {
+th,tr,td {
     background-color: white;
-    max-width: 125%;
+   
+    border: red 2px solid;
 }

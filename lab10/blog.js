@@ -16,7 +16,7 @@ $(function() {
             else {
                 return Promise.reject({ status: response.status, statusText: response.statusText });
         }})
-        .then(user => {
+        .then(user => {            
             let display = `<p> user name is ${user.username}</p><p>email is ${user.email}</p>` + 
             `<p> address: ${user.address.street} ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}</p>`;
             $("#userInfoDisplay").html(display);
@@ -36,20 +36,22 @@ $(function() {
             }
             else {
                 return Promise.reject({ status: response.status, statusText: response.statusText });
-        }})
-        .then(posts => {
+            }
+        })
+        .then(posts => {            
             let display = "";
             let post;
-            for (post in posts) {
+            for (post of posts) {
+                console.log(post)
                 display += `<div>
                 <p> title: ${post.title}</p>
                 <p> ${post.body} </p>
-                <p><button id="${post.id} class="comment-button">Show comments</button><p>
+                <p><button id="${post.id}" class="comment-button">Show comments</button><p>
                 <div id="${post.id}comment"></div>
                 </div>`;
             }
             $("#postsDisplay").html(display);
-            $(".comment-button").click(function(evt) {
+            $(".comment-button").on('click', function(evt) {
                 evt.preventDefault();
                 let postId = $(evt.target).attr('id');
                 fetch(url + `comments?postId=${postId}`)
@@ -63,7 +65,7 @@ $(function() {
                 .then(comments => {
                     let comment;
                     let commentDisplay = "";
-                    for (comment in comments) {
+                    for (comment of comments) {
                         commentDisplay += `<div>
                         <p> title: ${comment.name}</p>
                         <p> email: ${comment.email}</p>

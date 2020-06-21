@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mid exam</title>
+    <script src="jquery-3.5.1.js"></script>
+    <script src="action.js"></script>
 </head>
-<div class="big">
+
 <nav> 
     <ul>
         <li>Home</li>
@@ -16,24 +18,23 @@
 </nav>
 
 <body>
-    <div class="div1">
-    <p>First name</p><input type="textarea" name="fname" size="90%">
-    <p>Last Name</p><input type="textarea" name="lname" size="90%">
-    <p>Phone</p><input type="textarea" name="phone" size="90%">
-    <p  style="background-color: maroon;">Add to Contacts</p>
-    <br/>
-    </div>
-    <div class="tablediv">
+<form id="form">
+    <p>First name <input required id="first" type="textarea"  name="fname" size="90%"></p>
+    <p>Last Name <input required id="last" type="textarea" name="lname" size="90%"></p>
+    <p>Phone <input required id="phone" type="tel" pattern="[0-9]{3}-?\d{3}-?\d{4}" name="phone" size="90%"></p>
+    <p><button id="add" type="submit">Add to Contacts</button></p>
+    <p id="check">data already exists</p>
+    
+</form>
+<!-- pattern="[a-zA_Z]{2}" -->
     <table>
-        <tr><th>First Name</th><th>LastName</th><th>Phone</th></tr>
-        <tr class="a"><td>Allay</td><td>Jhonson</td><td>(202) 234-3457</td></tr>
-        <tr><td>Rox</td><td>Bay</td><td>(382) 234-6752</td></tr>
-    
-        <tr class="a"><td>Jack</td><td>Boston</td><td>(546) 234-5654</td></tr>
-    
+        <thead>
+            <tr><th>First Name</th><th>LastName</th><th>Phone</th><th>Action</th></tr>
+        </thead>
+        <tbody id="contact_data">
+            <!-- <tr><td id="firstName"></td><td id="lastName"></td><td id="phoneNumber"></td><td id="act"></td></tr> -->
+        </tbody>
     </table>
-    <p>Table Caption:Address Book</p>
-</div>
-</div>
+
 </body>
 </html>
